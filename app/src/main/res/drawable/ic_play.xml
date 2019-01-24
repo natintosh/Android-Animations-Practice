@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:name="group_play_paths_rotation"
+        android:pivotX="12"
+        android:pivotY="12">
+        <group android:name="group_play_path_top">
+            <path
+                android:name="path_play_top"
+                android:fillColor="#000000"
+                android:pathData="M4,20 L4,4 L20,12 Z M4,20 L20,12 Z"
+                android:strokeColor="#000000" />
+        </group>
+    </group>
+</vector>

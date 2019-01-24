@@ -1,0 +1,49 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="96dp"
+            android:height="96dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <group
+                android:name="group_play_paths_rotation"
+                android:pivotX="12"
+                android:pivotY="12">
+                <group android:name="group_play_path_top">
+                    <path
+                        android:name="path_play_top"
+                        android:fillColor="#000000"
+                        android:pathData="M 4 20 L 4 4 L 20 12 Z M 4 20 L 20 12 Z"
+                        android:strokeColor="#000000" />
+                </group>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="group_play_paths_rotation">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="300"
+                android:interpolator="@android:interpolator/linear_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="90"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="path_play_top">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="200"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:startOffset="100"
+                android:valueFrom="M 4 4 L 12 8 L 20 12 L 4 20 L 4 4 M 12 17 L 12 17 L 12 17 L 12 17 L 12 17"
+                android:valueTo="M 4 4 L 4 10 L 20 10 L 20 4 L 4 4 M 4 20 L 20 20 L 20 14 L 4 14 L 4 20"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+</animated-vector>
